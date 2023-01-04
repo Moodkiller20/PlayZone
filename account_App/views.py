@@ -5,3 +5,5 @@ def loginView(request):
 
 
     return render(request,"account/login.html")
+
+

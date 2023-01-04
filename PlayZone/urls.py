@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from account_App import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('account_App.urls')),
+    path('', include('playzone_App.urls')),
+    path('account/', include('account_App.urls')),
 ]
