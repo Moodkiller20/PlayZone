@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path,include
 
 import account_App
+from account_App import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('account', include(account_App.urls)),
+    path('login', views.loginView,name ='login'),
 ]
