@@ -17,5 +17,5 @@ from django.urls import path
 from account_App import views
 
 urlpatterns = [
-    path('', views.loginView, name='login'),
+    path('login', views.loginView, name='login'),
 ]
