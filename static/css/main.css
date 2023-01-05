@@ -3,7 +3,14 @@ body{
     background-color: black !important;
 }
 
-
 h1,h2,h4,h3,h5,h6, p,label{
     color: white !important;
+}
+
+#title{
+    text-align: center;
+    background: linear-gradient(to left, #216af3,
+    #08eaff, #ff0000, #9800fc, #fcca00);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
 }
