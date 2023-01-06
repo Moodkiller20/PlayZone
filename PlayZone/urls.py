@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('playzone_App.urls')),
     path('account/', include('account_App.urls')),
-    path('', views.connectFour, name="connectFour"),
+    path('connectFour/', views.connectFour, name="connectFour"),
 ]
