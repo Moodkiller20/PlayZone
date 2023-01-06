@@ -1,5 +1,8 @@
 # Created by https://www.gitignore.io
 
+# ignore pycharm config
+.idea
+
 ### OSX ###
 .DS_Store
 .AppleDouble
