@@ -1,0 +1,97 @@
+{% extends "slotmachine/base.html" %}
+{% load static %}
+{% block body %}
+
+    <script src="{% static 'js/slotmachine/scripts.js'%}"></script>
+
+
+
+<div class="container my-5 bg-black border rounded py-2 shadow">
+    <div class="row align-items-center rounded p-3 m-2">
+
+
+        <div  class="col m-2 d-flex justify-content-center">
+            <div class="col m-2 d-flex justify-content-center">
+                <div class="col text-center">
+                    <h1 class="display-3 text-primary">Slot Machine</h1>
+                    <p class="lead" id="win-p">Get 3 of a kind in a row to win!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center rounded p-3 m-2">
+            <div class="col m-2 d-flex justify-content-center">
+                <img
+                        src=" {% static 'images/slotmachine/cherry.png' %} "
+                        alt=" cherry picture"
+                        class="img-fluid img-thumbnail"
+                        id="img-0"
+                />
+            </div>
+            <div class="col m-2 d-flex justify-content-center">
+                <img
+
+                        src=" {% static 'images/slotmachine/lemon.png' %}"
+                        alt=""
+                        class="img-fluid img-thumbnail"
+                        id="img-1"
+                />
+            </div>
+            <div class="col m-2 d-flex justify-content-center">
+                <img
+                        src=" {% static 'images/slotmachine/seven.png' %}"
+                        alt=""
+                        class="img-fluid img-thumbnail"
+                        id="img-2"
+                />
+            </div>
+        </div>
+        <div class="row align-items-center m-2 text-center">
+            <div class="col-sm">
+                <h3 class="text-primary">Balance</h3>
+                <h3>$<span id="money">50</span></h3>
+            </div>
+            <div class="col-sm">
+                <h3 class="text-primary">Bet</h3>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-3" id="minus">
+                        <button class="btn btn-danger">-</button>
+                    </div>
+                    <div class="col-3">
+                        <h3>$<span id="bet">1</span></h3>
+                    </div>
+                    <div class="col-3" id="plus">
+                        <button class="btn btn-success">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <button class="btn btn-outline-primary" id="spin">
+                    Spin
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="64"
+                            height="64"
+                            fill="currentColor"
+                            class="bi bi-play-fill"
+                            viewBox="0 0 16 16"
+                    >
+                        <path
+                                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                        />
+
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
