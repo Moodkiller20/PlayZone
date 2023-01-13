@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'account_App.apps.AccountAppConfig',
+    'playzone_App.apps.PlayzoneAppConfig',
 ]
 
 MIDDLEWARE = [
@@ -125,6 +126,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = ['static']
 
+
+MEDIA_URL = "/media/" # MEDIA_URL is used to access media files.
+MEDIA_ROOT=os.path.join(BASE_DIR,"media/") # MEDIA_ROOT is the absolute path to the file system where Media files will be uploaded.
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

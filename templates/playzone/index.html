@@ -66,38 +66,33 @@
 
     </div>
 
-    
+
     <div class="container mt-5">
         <div class="row align-items-start">
 
-          <div class="col my-2 mx-1">
-            <div class="card" style="width:100%;">
-                <img src="https://picsum.photos/640/360" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-black">Card title</h5>
-                  <p class="card-text text-black">text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Play</a>
+            {% for game in games %}
+                <div class="col my-2 mx-1">
+                    <div class="card" style="width:100%;">
+                        <img src="{{ game.game_image.url}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-black">{{ game.game_name }}</h5>
+                            <p class="card-text text-black">{{ game.description }}</p>
+                            <a href="{{game.url_link}}" class="btn btn-primary">Play</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-          </div>
-          <div class="col my-2 mx-1">
-            <div class="card" style="width:100%;">
-                <img src="https://picsum.photos/640/360" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-black">Card title</h5>
-                  <p class="card-text text-black">he card title and make up the bulk of the card's content.</p>
-                 
-                </div>
-              </div>
-          </div>
+            {% endfor %}
 
 
-           
+
+
+
+
 
 
 
         </div>
-      </div>
+    </div>
 
 
 
