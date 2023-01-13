@@ -27,6 +27,7 @@ urlpatterns = [
     path('account/', include('account_App.urls')),
     path('connectFour/', views.connectFour, name="connectFour"),
     path('slots/', include('slotMachine_App.urls')),
+    path('tictactoe/', include('tictactoe_App.urls')),
 ]
 
 
