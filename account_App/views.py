@@ -18,7 +18,7 @@ def login_view(request):
             return render(request, 'playzone/index.html')
         else:
             print(username, password)
-            messages.success(request, ("There was an error loging you in"))
+            
             return redirect('login')
             user = form.get_user()
             login(request, user)
