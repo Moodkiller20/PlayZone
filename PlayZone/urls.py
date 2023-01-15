@@ -28,6 +28,7 @@ urlpatterns = [
     path('connectFour/', views.connectFour, name="connectFour"),
     path('slots/', include('slotMachine_App.urls')),
     path('tictactoe/', include('tictactoe_App.urls')),
+    path('rockpaperscissor/', include('rockpaperscissor_App.urls')),
 ]
 
 

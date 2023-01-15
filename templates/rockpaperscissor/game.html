@@ -1,0 +1,56 @@
+{% extends "common/gameView.html" %}
+{% load static %}
+{% block gamePlayer %}
+
+
+
+
+<div class="container my-5 bg-black border rounded py-2 shadow">
+    <div class="row align-items-center rounded p-3 m-2">
+
+
+      <div class="col text-start">
+        {% comment %} image one {% endcomment %}
+        <div id ="image-user">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/4/2019/09/GettyImages-1128879610-c-fbbc77f.jpg" alt="Girl in a jacket" width="100%" height="30%">
+        </div>
+      </div>
+
+      {% comment %} space between the two images {% endcomment %}
+      <div class="col text-center">
+      </div>
+      {% comment %} image two {% endcomment %}
+      <div class="col text-end">
+       <div id ="image-bot">
+        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4A7IsQHnc7zYZjRgyqbc0fspjWgP5D9ttg&usqp=CAU" alt="Girl in a jacket" width="100%" height="30%">
+        </div>
+      </div>
+
+    </div>
+</div>
+
+<div class="row  mx-auto align-items-center border rounded py-2">
+
+  <div class="col my-2 ms-4 mx-1 text-start "> 
+      <h1><i class="fa-regular fa-note-sticky fa-2xl"></i></h1>
+    {% comment %} <img class="rounded float-start"src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4A7IsQHnc7zYZjRgyqbc0fspjWgP5D9ttg&usqp=CAU" alt="Girl in a jacket" width="30%" height="30%"> {% endcomment %}
+  </div>
+
+  <div class="col my-2 mx-1 text-center"> 
+    <h1><i class="fa-regular fa-hand-scissors fa-2xl"></i></h1>
+    {% comment %} <img class="rounded float-center" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4A7IsQHnc7zYZjRgyqbc0fspjWgP5D9ttg&usqp=CAU" alt="Girl in a jacket" width="30%" height="30%"> {% endcomment %}
+  </div>
+  <div class="col my-2 me-4 mx-1 text-end"> 
+    <h1><i class="fa-regular fa-hand-back-fist fa-2xl"></i></h1>
+    {% comment %} <img class="rounded float-end" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4A7IsQHnc7zYZjRgyqbc0fspjWgP5D9ttg&usqp=CAU" alt="Girl in a jacket" width="30%" height="30%"> {% endcomment %}
+  </div>
+</div>
+
+
+
+
+  
+
+
+
+{% endblock %}

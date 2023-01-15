@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'account_App.apps.AccountAppConfig',
     'playzone_App.apps.PlayzoneAppConfig',
     'tictactoe_App.apps.TictactoeAppConfig',
+    'rockpaperscissor_App.apps.RockpaperscissorAppConfig'
 ]
 
 MIDDLEWARE = [
