@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'account_App.apps.AccountAppConfig',
     'playzone_App.apps.PlayzoneAppConfig',
+    'tictactoe_App.apps.TictactoeAppConfig',
 ]
 
 MIDDLEWARE = [
