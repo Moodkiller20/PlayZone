@@ -1,13 +1,78 @@
 {% extends "common/gameView.html" %}
 
+{% load static %}
+
 {% block title %}
     Connect Four
 {% endblock %}
 
 {% block gamePlayer %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/connectFour/styles.css' %}"/>
+    <script src="{% static 'js/connectFour/scripts.js'%}"></script>
 
-    <canvas id="myCanvas" width="450" height="300" style="border:2px solid white;">
-    </canvas>
+
+<div class="container my-3 bg-black border rounded py-3 shadow">
+
+    <h1 class="display-5 text-center">Connect 4</h1>
+
+    <table class="table table-dark table-bordered table-hover text-center">
+        <tbody class="y-6">
+        <td class="x-1">‎ ‎ ‎ ‎ </td>
+        <td class="x-2">‎ ‎ ‎ ‎ </td>
+        <td class="x-3">‎ ‎ ‎ ‎ </td>
+        <td class="x-4">‎ ‎ ‎ ‎ </td>
+        <td class="x-5">‎ ‎ ‎ ‎ </td>
+        <td class="x-6">‎ ‎ ‎ ‎ </td>
+        <td class="x-7">‎ ‎ ‎ ‎ </td>
+        </tbody>
+        <tbody class="y-5">
+        <td class="x-1">‎ ‎ ‎ ‎ </td>
+        <td class="x-2"></td>
+        <td class="x-3"></td>
+        <td class="x-4"></td>
+        <td class="x-5"></td>
+        <td class="x-6"></td>
+        <td class="x-7"></td>
+        </tbody>
+        <tbody class="y-4">
+        <td class="x-1">‎ ‎ ‎ ‎ </td>
+        <td class="x-2"></td>
+        <td class="x-3"></td>
+        <td class="x-4"></td>
+        <td class="x-5"></td>
+        <td class="x-6"></td>
+        <td class="x-7"><span style="color:red">O</span</td>
+        </tbody>
+        <tbody class="y-3">
+        <td class="x-1">‎ ‎ ‎ ‎ </td>
+        <td class="x-2"></td>
+        <td class="x-3"></td>
+        <td class="x-4"></td>
+        <td class="x-5"></td>
+        <td class="x-6"></td>
+        <td class="x-7"><span style="color:white">O</span</td>
+        </tbody>
+        <tbody class="y-2">
+        <td class="x-1">‎ ‎ ‎ ‎ </td>
+        <td class="x-2"></td>
+        <td class="x-3"></td>
+        <td class="x-4"></td>
+        <td class="x-5"></td>
+        <td class="x-6"></td>
+        <td class="x-7"><span style="color:white">O</span</td>
+        </tbody>
+        <tbody class="y-1">
+        <td class="x-1">‎ ‎ ‎ ‎ </td>
+        <td class="x-2"></td>
+        <td class="x-3"></td>
+        <td class="x-4"></td>
+        <td class="x-5"></td>
+        <td class="x-6"></td>
+        <td class="x-7"><span style="color:white">O</span</td>
+        </tbody>
+    </table>
+
+</div>
 
 {% endblock %}
 
